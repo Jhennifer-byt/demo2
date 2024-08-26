@@ -1,8 +1,7 @@
-FROM  php:8.1-apache
+FROM php:8.1-apache
 
-#descargar dependencias necesarias para postgreSQL
-
-RUN apt-get uptade && apt-get install -y \ 
+#Instalar dependencias necesarias para postgresSQL
+RUN apt-get update && apt-get install -y \
     libpq-dev \
     && docker-php-ext-install pdo pdo_pgsql pdo_pgsql
 
