@@ -5,4 +5,4 @@ services:
   -dockerfilePath: ./Dockerfile
   -plan : free # esto puede cambiar según el plan que tengas
   -branch : main
-  autoDeploy : true
+  -autoDeploy : true
